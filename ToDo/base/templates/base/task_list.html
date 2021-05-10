@@ -1,18 +1,18 @@
 {% extends 'base.html' %}
 
-{% block title %}Lista de tarefas{% endblock %}
+{% block title %}Task List{% endblock %}
 
 {% block content %}
 <div class="offset-1 col-10 list-div">
-    <h1>Lista de Tarefas</h1>
+    <h1>Task List</h1>
     <a id= "add-link" href= "{% url 'task-create' %}">
         <div class="col-2 add-div">
-            <i class="fas fa-plus"></i> Adicionar tarefa
+            <i class="fas fa-plus"></i> Add task
         </div>
     </a>
     <div class="col-9 search-div">
         <form method="GET" id="search-form">
-            <input class="form-control" type="text" id="search" name="search" placeholder="Digite o nome da tarefa para buscar" value="{{ search_input }}">
+            <input class="form-control" type="text" id="search" name="search" placeholder="Enter the name of the task to search" value="{{ search_input }}">
             <i class="fas fa-search" id="search-btn"></i>
         </form>
     </div>

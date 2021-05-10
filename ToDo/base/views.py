@@ -39,11 +39,27 @@ class TaskList(LoginRequiredMixin, ListView):
     model = Task
     context_object_name = 'tasks'
 
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['tasks'] = context['tasks'].filter(user= self.request.user)
+        context['count'] = context['tasks'].filter(complete= False).count()
+        
+        search_input = self.request.GET.get('search') or ''
+        if search_input:
+            context['tasks'] = context['tasks'].filter(title__icontains= search_input)
+        context['search_input'] = search_input
+
+        return context
+
 
 class TaskCreate(LoginRequiredMixin, CreateView):
     model = Task
     fields =  ['title', 'description', 'complete']
     success_url = reverse_lazy('tasks')
+
+    def form_valid(self, form):
+        form.instance.user = self.request.user
+        return super(TaskCreate, self).form_valid(form)
 
 
 class TaskUpdate(LoginRequiredMixin, UpdateView):
@@ -54,5 +70,5 @@ class TaskUpdate(LoginRequiredMixin, UpdateView):
 def deleteTask(request, id):
     task = get_object_or_404(Task, pk= id)
     task.delete()
-    messages.info(request, "Tarefa deletada com sucesso.")
+    messages.info(request, "Task successfully deleted.")
     return redirect("/")

@@ -8,9 +8,11 @@ from django.contrib.auth.views import LoginView
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import login
+from rest_framework import permissions
 
 from .models import Task
 
+from rest_framework.permissions import IsAuthenticated
 
 
 class CustomLoginView(LoginView):
@@ -36,6 +38,8 @@ class RegisterPage(FormView):
 
 
 class TaskList(LoginRequiredMixin, ListView):
+    permission_classes = (IsAuthenticated, )
+
     model = Task
     context_object_name = 'tasks'
 

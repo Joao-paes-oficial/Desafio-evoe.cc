@@ -74,4 +74,8 @@ Password: tracert12
 - CSS
 
 - JavaScript
+
+- jQuery
+
+- Bootstrap
 ```

@@ -9,13 +9,13 @@
 
 - Só posso operar apenas as tarefas que eu cadastrei;
 
-## Necessário ter o Python instalado
-**Caso não tenha o Python instalado *[clique aqui](https://www.python.org/downloads/).***
-
 ## Diagrama
 ![Diagrama](https://user-images.githubusercontent.com/68566439/117908988-ca6b9080-b2af-11eb-927f-5ad761580ac5.png)
 
-## Instalações necessárias:
+## Necessário ter o Python instalado
+**Caso não tenha o Python instalado *[clique aqui](https://www.python.org/downloads/).***
+
+## Instalações necessárias através do pip:
 ```
     Prompt:
     pip install djangorestframework

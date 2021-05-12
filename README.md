@@ -7,14 +7,15 @@
 **Caso não tenha o Python instalado *[clique aqui](https://www.python.org/downloads/).***
 
 ## Arquivo .env
-- É necessário ter a envtodo instalada, pois nela contém as instalações necessárias para o uso da api.
+- É necessário ter o arquivo ``envtodo``, pois nele contém as instalações necessárias para o uso da api.
 
 ## Diagrama
 ![Diagrama](https://user-images.githubusercontent.com/68566439/117908988-ca6b9080-b2af-11eb-927f-5ad761580ac5.png)
 
 ## Comandos necessários para rodar a api:
-``` Prompt
-
+``` 
+    Prompt:
+    
     cd envtodo\Scripts
     activate
     cd ..

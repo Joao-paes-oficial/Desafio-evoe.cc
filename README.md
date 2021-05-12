@@ -70,11 +70,11 @@ Password: tracert12
 ```
 - Django
 
+- Python
+
 - HTML
 
 - CSS
 
 - JavaScript
-
-- Python
 ```

@@ -45,23 +45,23 @@ Password: tracert12
 
 ![Tela_Registro](https://user-images.githubusercontent.com/68566439/117909067-f2f38a80-b2af-11eb-853c-c1cf80bd555f.png)
 
-**Tela Principal**
+**Tela principal**
 
 ![Tela_de_Tarefas](https://user-images.githubusercontent.com/68566439/117915011-c2651e00-b2ba-11eb-8318-e67bbd21cfa3.png)
 
-**Tela de criar**
+**Tela de criar tarefa**
 
 ![Tela_Criar_Tarefa](https://user-images.githubusercontent.com/68566439/117909051-ec651300-b2af-11eb-9907-8cffc22383f6.png)
 
-**Tela de Vizualizar**
+**Tela de vizualizar a tarefa existente**
 
 ![Visualizar_Tarefa](https://user-images.githubusercontent.com/68566439/117909079-f6871180-b2af-11eb-855f-c028a9550df9.png)
 
-**Tela de atualizar**
+**Tela de atualizar a tarefa existente**
 
 ![Tela_Editar_Tarefa](https://user-images.githubusercontent.com/68566439/117909055-ed964000-b2af-11eb-94a3-b0905c2841a6.png)
 
-**Tela de deletar**
+**Tela de quando deleta alguma tarefa**
 
 ![Tarefa_Deletada](https://user-images.githubusercontent.com/68566439/117909045-ea02b900-b2af-11eb-8399-6267fba9e014.png)
 

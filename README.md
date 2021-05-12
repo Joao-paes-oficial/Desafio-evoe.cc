@@ -1,5 +1,14 @@
 <h1 align="center">Desafio-evoe.cc</h1>
 
+# Descrição
+**Elaborar uma API Simples utilizando os frameworks Django e Django Rest API para registro de uma ToDo List com atenção às seguintes regras:**
+
+- Deve possuir autenticação simples com login e senha para obtenção do token;
+
+- Apenas usuários autenticados podem utilizar a API;
+
+- Só posso operar apenas as tarefas que eu cadastrei;
+
 ## Necessário ter o Python instalado
 **Caso não tenha o Python instalado *[clique aqui](https://www.python.org/downloads/).***
 

@@ -44,7 +44,7 @@ Password: tracert12
 ![Tela_Registro](https://user-images.githubusercontent.com/68566439/117909067-f2f38a80-b2af-11eb-853c-c1cf80bd555f.png)
 
 **Tela Principal**
-![Tela_Lista_Tarefas](https://user-images.githubusercontent.com/68566439/117909061-ef600380-b2af-11eb-9808-c0811ba674bc.png)
+![Tela_de_Tarefas](https://user-images.githubusercontent.com/68566439/117915011-c2651e00-b2ba-11eb-8318-e67bbd21cfa3.png)
 
 **Tela de criar**
 ![Tela_Criar_Tarefa](https://user-images.githubusercontent.com/68566439/117909051-ec651300-b2af-11eb-9907-8cffc22383f6.png)

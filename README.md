@@ -6,24 +6,35 @@
 ## Necessário ter o Python instalado
 **Caso não tenha o Python instalado *[clique aqui](https://www.python.org/downloads/).***
 
-## Arquivo .env
-- É necessário ter o arquivo ``envtodo``, pois nele contém as instalações necessárias para o uso da api.
-
 ## Diagrama
 ![Diagrama](https://user-images.githubusercontent.com/68566439/117908988-ca6b9080-b2af-11eb-927f-5ad761580ac5.png)
 
-## Comandos necessários para rodar a api:
+## Instalações necessárias:
+```
+    Prompt:
+    pip install djangorestframework
+    pip install django-crispy-forms
+    pip install djangorestframework-simplejwt
+```
+
+## Comando necessário para rodar a api:
 ``` 
     Prompt:
-    
-    cd envtodo\Scripts
-    activate
-    cd ..
-    cd ..
     cd ToDo
     python manage.py runserver
 ```
 **Apoós rodar os comandos, basta acessar: http://127.0.0.1:8000/**
+
+**Tem duas formas de fazer login, a primeira é criando um usuário através do registro, e a segunda é usando umas das já criadas**
+```
+Super usuário
+Username: John
+Password: tracert12
+
+Usuário comum
+Username: Jean
+Password: tracert12
+```
 
 ## Imagens
 **Tela de login**

@@ -31,7 +31,7 @@
 ```
 **Apoós rodar os comandos, basta acessar: http://127.0.0.1:8000/**
 
-**Tem duas formas de fazer login, a primeira é criando um usuário através do registro, e a segunda é usando umas das já criadas:**
+**Tem duas formas de fazer login, a primeira é criando um usuário através do registro, e a segunda, é usando umas das já criadas:**
 ```
 Super usuário
 Username: John

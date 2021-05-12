@@ -26,7 +26,13 @@
     <ul class="task-list">
         {% for task in tasks %}
         <li class="task-item">
+            {% if task.complete %}
+            <span><s><a href="task/{{ task.id }}">{{ task.title }}</a></s></span>
+            
+            {% else %}
             <span><a href="task/{{ task.id }}">{{ task.title }}</a></span>
+    
+            {% endif %}
             <a href="deletetask/{{ task.id }}"><span><i class="fas fa-trash"></i></span></a>
             <a href="task-update/{{ task.id }}/"><span><i class="fas fa-edit"></i></span></a>
         </li>

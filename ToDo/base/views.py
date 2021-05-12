@@ -1,6 +1,8 @@
-from django.shortcuts import redirect, get_object_or_404
+from django.core.paginator import Paginator
+from django.shortcuts import redirect, get_object_or_404, render
 from django.views.generic.list import ListView
 from django.views.generic.edit import CreateView, UpdateView, FormView
+from django.views.generic.detail import DetailView
 from django.urls import reverse_lazy
 from django.contrib import messages
 
@@ -8,7 +10,6 @@ from django.contrib.auth.views import LoginView
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import login
-from rest_framework import permissions
 
 from .models import Task
 
@@ -54,6 +55,11 @@ class TaskList(LoginRequiredMixin, ListView):
         context['search_input'] = search_input
 
         return context
+        
+
+class TaskDetail(LoginRequiredMixin, DetailView):
+    model = Task
+    
 
 
 class TaskCreate(LoginRequiredMixin, CreateView):
@@ -71,8 +77,18 @@ class TaskUpdate(LoginRequiredMixin, UpdateView):
     fields = ['title', 'description', 'complete']
     success_url = reverse_lazy('tasks')
 
+
 def deleteTask(request, id):
     task = get_object_or_404(Task, pk= id)
     task.delete()
     messages.info(request, "Task successfully deleted.")
     return redirect("/")
+
+
+def paginator(request):
+    tasks_list = Task.objects.all().order_by('-created_at').filter(user=request.user)
+    paginator = Paginator(tasks_list, 8)
+    page = request.GET.get('page')
+    tasks = paginator.get_page(page)
+
+    return render(request, "base/task_list.html", {'tasks' : tasks})

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Task{% endblock %}
+
+{% block content %}
+    <section>
+        <div id="text-title">
+            <h1>{{ object }}</h1>
+        </div>
+        <div id="text-description">
+            <p>{{ object.description }}</p>
+        </div>
+    </section>          
+{% endblock %}
